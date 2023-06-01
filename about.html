@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    
+
+
+    <link href="proWebb.css" rel="stylesheet" />
+    
+</head>
+<body >
+    
+    
+   
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="99.jpg" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="proWebb.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="combo.html">Combo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="seasons.html">Seasons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Foe.html">Foe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <script> const navbarToggler = document.body.querySelector('.navbar-toggler');
+        const responsiveNavItems = [].slice.call(
+            document.querySelectorAll('#navbarResponsive .nav-link')
+        );
+        responsiveNavItems.map(function (responsiveNavItem) {
+            responsiveNavItem.addEventListener('click', () => {
+                if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                    navbarToggler.click();
+                }
+            });
+        });
+</script>
+
+            <!-- about -->
+            <section class="page-section" id="contact">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Submit Your Opinion</h2>
+                        <h3 class="section-subheading text-muted">A point can change and proceed to continue.</h3>
+                    </div>
+                  
+                   
+                    
+                    
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <div class="row align-items-stretch mb-5">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                   
+                                    <input class="form-control" id="name" type="text" placeholder="Full name" data-sb-validations="required" />
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                </div>
+                                <div class="form-group">
+                                  
+                                    <input class="form-control" id="email" type="email" placeholder="Gmail or Email" data-sb-validations="required,email" />
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                </div>
+                                <div class="form-group mb-md-0">
+                                    
+                                    <input class="form-control" id="phone" type="tel" placeholder="Phone Num" data-sb-validations="required" />
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-group-textarea mb-md-0">
+                                   
+                                    <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center text-white mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                <br />
+                                <a href="https://startbootstrap.com/solution/contact-forms"></a>
+                            </div>
+                        </div>
+                        
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        
+                        <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send </button></div>
+                    </form>
+                </div>
+            </section>
+    
+            <script src="proWebb.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Released</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    
+    
+    
+    <link href="proWebb.css" rel="stylesheet" />
+    
+</head>
+<body >
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="99.jpg" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="proWebb.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="combo.html">Combo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="seasons.html">Seasons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Foe.html">Foe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const navbarToggler = document.body.querySelector('.navbar-toggler');
+        const responsiveNavItems = [].slice.call(
+            document.querySelectorAll('#navbarResponsive .nav-link')
+        );
+        responsiveNavItems.map(function (responsiveNavItem) {
+            responsiveNavItem.addEventListener('click', () => {
+                if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                    navbarToggler.click();
+                }
+            });
+        });
+        </script>
+
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About Salamanca Family</h2>
+                <h3 class="section-subheading text-muted">West cost mexican family earning illegal ways to live.</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="11.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Tuco Salamanca</h4>
+                            <h4 class="subheading">Time of start</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">How crazy is Tuco? Not only does he just keep punching Mike in the face for holding onto his shirt, but Tuco delivers the knockout punch after the cops have shown up and are right behind him. As such, Raymond Cruz can’t be expected to stand there and swing his fists in a manner that comes across as anything but designedly savage. Perhaps that’s how the small-timer Daniel would do that kind of thing, but not Tuco.</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="22.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Nacho varga</h4>
+                            <h4 class="subheading">Also called Ignacio</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Nacho is impressed by Mike's candor and coolness under pressure. As Tuco becomes increasingly volatile, potentially exposing the Salamanca organization, and the likelihood of his learning about Nacho's secret deals increases, Nacho decides to eliminate Tuco and tries to hire Mike to kill him</p></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="33.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Hector Salamanca</h4>
+                            <h4 class="subheading">The Boss and tío(uncle)</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Among these arcs is the uneasy truce between the Salamanca family that serves the Juárez Cartel drug interest, and Gus Fring, a fried chicken entrepreneur whose restaurant chain is a front for the drug trade. The Salamanca family is led by Hector Salamanca, and later by his nephews Tuco and Lalo. </p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="44.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Lalo Salamanca</h4>
+                            <h4 class="subheading">Though enemy you love</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">According to Dalton, Lalo was originally not intended to be charming; he felt the series needed someone "kind of smiling and carefree and a little bit mischievous" like Jimmy but "in the bad guy's part".[16] Dalton took inspiration from Samuel L. Jackson's character Jules Winnfield in Pulp Fiction and the negative characters portrayed by Jack Nicholson to create a "[k]ind of this smart ass, sort of scary but kind of carefree, kind of cool guy".[</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Thrill
+                            <br />
+                            Never
+                            <br />
+                            Ends
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="proWebb.js"></script>
+    
+</body>
+</html>
