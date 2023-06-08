@@ -42,19 +42,7 @@
             </div>
         </nav>
  
-        <script>
-            const navbarToggler = document.body.querySelector('.navbar-toggler');
-            const responsiveNavItems = [].slice.call(
-                document.querySelectorAll('#navbarResponsive .nav-link')
-            );
-            responsiveNavItems.map(function (responsiveNavItem) {
-                responsiveNavItem.addEventListener('click', () => {
-                    if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                        navbarToggler.click();
-                    }
-                });
-            });
-            </script>
+        
        
         <header class="masthead">
             <div class="container"> 
